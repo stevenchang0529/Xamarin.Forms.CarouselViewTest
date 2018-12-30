@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin.Forms.CarouselViewTest"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              ios:Page.UseSafeArea="true"
+             BindingContext="{local:DataModel}"
+             xmlns:control="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="Xamarin.Forms.CarouselViewTest.MainPage">
+    <StackLayout>
+        <control:CarouselViewControl HeightRequest="200" BackgroundColor="Red" 
+                                     InterPageSpacing="30" Orientation="Vertical"  ItemsSource="{Binding Items}">
+            <control:CarouselViewControl.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <BoxView BackgroundColor="Gray"/>
+                        <Label VerticalOptions="CenterAndExpand" Text="{Binding .}" />
+                        <BoxView BackgroundColor="Gray"/>
+                    </StackLayout>
+                </DataTemplate>
+            </control:CarouselViewControl.ItemTemplate>
+        </control:CarouselViewControl>
+    </StackLayout>
+</ContentPage>

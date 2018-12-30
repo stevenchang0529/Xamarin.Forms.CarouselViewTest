@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms.CarouselViewTest.MyCarouselPage"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
+    <ContentPage ios:Page.UseSafeArea="true">
+        <Label Text="第一頁" HorizontalOptions="Center" VerticalOptions="Center" />
+    </ContentPage>
+    <ContentPage ios:Page.UseSafeArea="true">
+        <Label Text="第二頁" HorizontalOptions="Center" VerticalOptions="Center" />
+    </ContentPage>
+    <ContentPage ios:Page.UseSafeArea="true">
+        <Label Text="第三頁" HorizontalOptions="Center" VerticalOptions="Center" />
+    </ContentPage>
+</CarouselPage>
